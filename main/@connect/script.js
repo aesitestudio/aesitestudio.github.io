@@ -7588,13 +7588,13 @@ var Ere = nL((Tre, Sw) => {
             return this.htmlEscape(n).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-Z0-9\u00A1\йцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮ\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
-            return t.replace(/[^\u00A1\u0020-\йцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮ\u007E\u00BF-\u00FF’]/gi, "")
+            return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(t) {
-            return t.replace(/(\u00a9|\u00ae|[\u2000-\йцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮ\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
+            return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
         }
         static safeText(t) {
             const n = document.createElement("div");
@@ -13097,7 +13097,7 @@ ${n.message}`,
             EDIT: "Edit",
             OK: "OK",
             NO: "No",
-            PLAY: "Play",
+            PLAY: "Играть",
             PUBLISH: "Publish",
             REMOVE: "Remove",
             RESET: "Reset",
@@ -24334,7 +24334,7 @@ ${t}`
         uee = {
             UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
             ROOM_IS_FULL: "The game is full",
-            ROOM_NOT_FOUND: "Room not found",
+            ROOM_NOT_FOUND: "Такой комнаты нет",
             AUDIENCE_IS_FULL: "The audience is full",
             UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
             UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
@@ -24346,28 +24346,28 @@ ${t}`
             FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
         },
         fee = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "ENTER YOUR NAME",
-            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-            PASSWORD_REQUIRED_TITLE: "Password required",
-            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-            ROOM_CODE: "ROOM CODE",
-            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+            NAME: "ИМЯ",
+            NAME_PLACEHOLDER: "ВВЕДИ СВОЁ ИМЯ",
+            PASSWORD_PLACEHOLDER: "ПЯТИ ЗНАЧНЫЙ ПАРОЛЬ",
+            PASSWORD_REQUIRED_TITLE: "Нужен пароль",
+            PASSWORD_REQUIRED_BODY: "Пожалуйста, введите пароль, или зайдите за зрителя",
+            PASSWORD_JOIN_AS_PLAYER: "Зайти за игрока",
+            PASSWORD_JOIN_AS_AUDIENCE: "Зайти за зрителя",
+            ROOM_CODE: "КОД КОМНАТЫ",
+            ROOM_CODE_PLACEHOLDER: "ВВЕДИ 4-ЁХ ЗНАЧНЫЙ КОД"
         },
         dee = "Link to Jackbox Games Homepage",
         hee = {
-            APPEARANCE: "APPEARANCE",
-            DARK: "dark",
-            HELP: "HELP",
+            APPEARANCE: "ТЕМА",
+            DARK: "тёмная",
+            HELP: "ПОМОЩЬ",
             TWITCH: "TWITCH",
-            LIGHT: "light",
-            LOGOUT: "LOGOUT",
+            LIGHT: "светлая",
+            LOGOUT: "ВЫЙТИ",
             MERCH: "MERCH",
-            PAST_GAMES: "PAST GAMES",
+            PAST_GAMES: "ПРОШЛЫЕ ИГРЫ",
             MAILING_LIST: "MAILING LIST",
-            MODERATOR: "MODERATOR"
+            MODERATOR: "МОДЕРАТОР"
         },
         pee = {
             CALL_TO_ACTION: {
@@ -24402,11 +24402,11 @@ from your past games list.`,
             ROOM_NOT_FOUND: "Room not found"
         },
         _ee = {
-            GAME_FULL: "GAME IS FULL",
+            GAME_FULL: "ИГРА ЗАПОЛНЕНА",
             GAME_STARTED: "GAME HAS STARTED",
-            JOIN_AUDIENCE: "JOIN AUDIENCE",
-            RECONNECT: "RECONNECT",
-            TWITCH_LOGIN: "LOGIN WITH TWITCH"
+            JOIN_AUDIENCE: "ЗАЙТИ К ЗРИТЕЛЯМ",
+            RECONNECT: "ПЕРЕЗАЙТИ",
+            TWITCH_LOGIN: "ЗАЙТИ ИСПОЛЬЗУЯ ТВИЧ"
         },
         yee = {
             CAMERA: "[b]HEADS UP:[/b] We\u2019re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
