@@ -3178,9 +3178,7 @@ label .remaining[data-v-ef24a772] {
 
 .tos[data-v-ef24a772] a {
     color: #ffffff;
-    text-decoration: none
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+    mix-blend-mode: difference;
 }
 
 button.audience:before {
