@@ -3178,6 +3178,7 @@ label .remaining[data-v-ef24a772] {
 
 .tos[data-v-ef24a772] a {
     color: #ffffff;
+    text-decoration: underline;
     mix-blend-mode: difference;
 }
 
