@@ -3179,13 +3179,8 @@ label .remaining[data-v-ef24a772] {
 .tos[data-v-ef24a772] a {
     color: #ffffff;
     text-decoration: none
-}
-
-@media (prefers-color-scheme: light) {
-        .tos[data-v-ef24a772] a {
-            color: #000000;
-            text-decoration: none
-        }
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 button.audience:before {
