@@ -2596,7 +2596,7 @@ button.twitch[data-v-f5303469] {
     }
 
     to {
-        background: #131313
+        background: #1a1a1a
     }
 }
 
@@ -2891,7 +2891,7 @@ hr[data-v-f058cb4c] {
 }
 
 .jbg.schemable.theme-dark[data-v-ef24a772] {
-    --accent: #005eff;
+    --accent: #000000;
     --alert: #ce4949;
     --shadows: rgb(4, 9, 14, .5);
     --backgroundPrimary: #0a1420;
@@ -3177,7 +3177,7 @@ label .remaining[data-v-ef24a772] {
 }
 
 .tos[data-v-ef24a772] a {
-    color: var(--accent);
+    color: #ffffff;
     text-decoration: none
 }
 
@@ -5460,7 +5460,7 @@ li.appearance svg .celestial[data-v-727b0bbe] {
 }
 
 .nav li.moderator a[data-v-1e5a97d3]:active {
-    background-color: #131313
+    background-color: #1a1a1a
 }
 
 .nav li.social a[data-v-1e5a97d3] {
@@ -5493,7 +5493,7 @@ li.appearance svg .celestial[data-v-727b0bbe] {
     top: -10px;
     left: auto;
     right: -10px;
-    border: 4px solid #131313
+    border: 4px solid #1a1a1a
 }
 
 @keyframes fade-animation-1e5a97d3 {
@@ -6120,7 +6120,7 @@ li.appearance svg .celestial[data-v-727b0bbe] {
     width: 100%;
     height: calc(100% - 50px);
     padding: 0 15px;
-    background-color: #131313;
+    background-color: #1a1a1a;
     overflow-y: auto;
     z-index: 99;
     transition: height .45s
