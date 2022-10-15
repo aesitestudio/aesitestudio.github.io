@@ -7588,10 +7588,10 @@ var Ere = nL((Tre, Sw) => {
             return this.htmlEscape(n).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\йцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮ\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
-            return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return t.replace(/[^\u00A1\u0020-\u007E\йцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮ\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -11235,7 +11235,7 @@ var Ere = nL((Tre, Sw) => {
             isPublic: !0,
             directory: "pp2/auction"
         }, {
-            name: "Bomb Corp",
+            name: "Бомб Корп.",
             tag: "bombintern",
             wrapper: "marionette",
             isPublic: !0,
@@ -11460,7 +11460,7 @@ var Ere = nL((Tre, Sw) => {
             directory: "pp8/survey-bomb",
             categoryId: "SurveyBombGame"
         }, {
-            name: "Weapons Drawn",
+            name: "Импостер's Дравун",
             tag: "murder-detectives",
             wrapper: "vue",
             isPublic: !0,
@@ -11492,21 +11492,21 @@ var Ere = nL((Tre, Sw) => {
             directory: "tjsp/triviadeath2",
             categoryId: "TriviaMurderParty2Game"
         }, {
-            name: "Fibbage 4",
+            name: "Бредни 4",
             tag: "fourbage",
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/fourbage",
             features: ["moderation", "kicking"]
         }, {
-            name: "Roomerang",
+            name: "Комеранг",
             tag: "htmf",
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/htmf",
             features: ["moderation", "kicking"]
         }, {
-            name: "Junktopia",
+            name: "Старьёпия",
             tag: "antique-freak",
             wrapper: "vue",
             isPublic: !0,
@@ -11514,7 +11514,7 @@ var Ere = nL((Tre, Sw) => {
             features: ["moderation", "kicking"],
             categoryId: "AntiqueGameGame"
         }, {
-            name: "Nonsensory",
+            name: "Чепухистика",
             tag: "range-game",
             wrapper: "vue",
             isPublic: !0,
@@ -11522,7 +11522,7 @@ var Ere = nL((Tre, Sw) => {
             features: ["moderation", "kicking"],
             categoryId: "RangeGameGame"
         }, {
-            name: "Quixort",
+            name: "Курсорт",
             tag: "lineup",
             wrapper: "vue",
             isPublic: !0,
@@ -24371,39 +24371,39 @@ ${t}`
         },
         pee = {
             CALL_TO_ACTION: {
-                SHOP: "VIEW GAME & SHOP",
-                VIEW: "VIEW THIS GAME"
+                SHOP: "ПОСМОТРЕТЬ И ЗАЙТИ В МАГАЗИН",
+                VIEW: "ПОСМОТРЕТЬ ЭТУ ИГРУ"
             },
-            NEW: "NEW",
-            PLAYED_ON: "PLAYED ON",
+            NEW: "НОВИНКА",
+            PLAYED_ON: "СЫГРАНО В",
             REMOVE: {
-                CONFIRM: "Are you sure?",
+                CONFIRM: "Вы уверены?",
                 DESCRIPTION: `This will permanently remove this game
 from your past games list.`,
-                MANAGE: "Remove Game?",
+                MANAGE: "Убрать игру?",
                 TITLE: "Are You Sure?"
             }
         },
         gee = {
-            EMPTY: "No Past Games Yet",
+            EMPTY: "Прошедших игр нету",
             MANAGE: "MANAGE",
             TITLE: "YOUR PAST GAMES"
         },
         mee = {
-            TITLE: "RECENT GAMES",
+            TITLE: "ПРОШЕДШИЕ ИГРЫ",
             VIEW_ALL: {
-                BUTTON: "VIEW ALL",
-                LINK: "VIEW ALL PAST GAMES"
+                BUTTON: "ПОСМОТРЕТЬ ВСЕ",
+                LINK: "ПОСМОТРЕТЬ ВСЕ ИГРЫ"
             }
         },
         vee = {
-            GAME_FULL: "Game is full",
-            GAME_STARTED: "Game has started",
-            ROOM_NOT_FOUND: "Room not found"
+            GAME_FULL: "Игра заполнена",
+            GAME_STARTED: "Игра началась",
+            ROOM_NOT_FOUND: "Комната не найдена"
         },
         _ee = {
             GAME_FULL: "ИГРА ЗАПОЛНЕНА",
-            GAME_STARTED: "GAME HAS STARTED",
+            GAME_STARTED: "ИГРА НАЧАЛАСЬ",
             JOIN_AUDIENCE: "ЗАЙТИ К ЗРИТЕЛЯМ",
             RECONNECT: "ПЕРЕЗАЙТИ",
             TWITCH_LOGIN: "ЗАЙТИ ИСПОЛЬЗУЯ ТВИЧ"
@@ -24411,7 +24411,7 @@ from your past games list.`,
         yee = {
             CAMERA: "[b]HEADS UP:[/b] We\u2019re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
             STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-            TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
+            TOS: "Нажимая {submit}, вы соглашаетесь с [tos]Условиями обсуживания[/tos]"
         },
         Eee = {
             BRANCH: lee,
