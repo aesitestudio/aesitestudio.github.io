@@ -21405,20 +21405,20 @@ const m1 = GC.extend({
         if (a.rules && a.rules.length > 0 || a.sort && a.sort.length > 0) {
             switch (n += "<div class='bomb-header' id='instruction-header'>", t) {
                 case "SmashPuzzle":
-                    n += "<span>READ INSTRUCTIONS BELOW TO HELP SMASH!</span>";
+                    n += "<span>ЧИТАЙ ИНСТРУКЦИИ ЧТОБЫ РАЗБИТЬ ПРЕДМЕТ</span>";
                     break;
                 case "WiredBomb":
-                    n += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                    n += "<span>СЛЕДУЙ ИНСТРУКЦИЯМ</span>";
                     break;
                 case "CoffeeBomb":
-                    n += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                    n += "<span>СЛЕДУЙ ИНСТРУКЦИЯМ</span>";
                     break;
                 case "FilingBomb":
                     break;
                 case "CopierBomb":
                     break;
                 case "KeypadBomb":
-                    n += "<span>FOLLOW THE INSTRUCTIONS</span>";
+                    n += "<span>СЛЕДУЙ ИНСТРУКЦИЯМ</span>";
                     break
             }
             if (n += "</div>", n += "<div class='rules-folder-tab'><span>MANUAL</span></div><div class='rules-folder'>", t === "FilingBomb") n += `<div class='rules-page'><span>${a.sort}</span></div>`;
@@ -21431,22 +21431,22 @@ const m1 = GC.extend({
             n += "</div>"
         } else switch (t) {
             case "SmashPuzzle":
-                n += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE SMASHER!</span></div>";
+                n += "<div class='bomb-header' id='instruction-header'><span>ТЫ РАЗБИВАЕШЬ ПРЕДМЕТ!</span></div>";
                 break;
             case "WiredBomb":
-                n += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE CUTTER!</span></div>";
+                n += "<div class='bomb-header' id='instruction-header'><span>ТЫ РЕЖЕШЬ ПРЕДМЕТ!</span></div>";
                 break;
             case "CoffeeBomb":
-                n += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE BREWER!</span></div>";
+                n += "<div class='bomb-header' id='instruction-header'><span>ТЫ ПРИГОТАВЛИВАЕШЬ ПРЕДМЕТ!</span></div>";
                 break;
             case "FilingBomb":
-                n += "<div class='bomb-header' id='instruction-header'><span>YOU ARE THE FILER!</span></div>";
+                n += "<div class='bomb-header' id='instruction-header'><span>ТЫ ФАЙЛЕР!</span></div>";
                 break;
             case "CopierBomb":
-                n += "<div class='bomb-header' id='instruction-header'><span>FIX THE COPIER!</span></div>";
+                n += "<div class='bomb-header' id='instruction-header'><span>ПОЧЕНИ АППАРАТ!</span></div>";
                 break;
             case "KeypadBomb":
-                n += "<div class='bomb-header' id='instruction-header'><span>CRACK THE CODE!</span></div>";
+                n += "<div class='bomb-header' id='instruction-header'><span>ВЗЛОМАЙ КОД!</span></div>";
                 break
         }
         this.$el.find(`#${e}`).html(n)
