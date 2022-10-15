@@ -50,7 +50,7 @@
         },        
         {
             "start": "2021-08-13",
-            "text": "Поддержите наши проекты",
+            "text": "Поддержите нас",
             "src": "https://jaebox.ga/BanImages/boosty.png",
             "href": "https://boosty.to/aestudios"
         },
@@ -68,40 +68,9 @@
         },
         {
             "start": "2021-07-23",
-            "text": "Уже доступен для скачивания!",
+            "text": "Уже доступен!",
             "src": "https://jaebox.ga/BanImages/impostersdrawn.png",
             "href": "https://www.youtube.com/watch?v=PlSCe1CRSTE"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "BUY HERE!",
-            "src": "https://s3.amazonaws.com/static.jackboxgames.com/banners/PP4.png",
-            "href": "https://jackboxgames.com/party-pack-four/?utm_source=jackboxtv&utm_campaign=jbgtvpp4&utm_content=jbgtvpp4"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "ON SALE! $12.49",
-            "src": "https://s3.amazonaws.com/static.jackboxgames.com/banners/PP3.png",
-            "href": "https://jackboxgames.com/party-pack-three/?utm_source=jackboxtv&utm_campaign=jbgtvpp3&utm_content=jbgtvpp3"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "BUY HERE!",
-            "src": "https://s3.amazonaws.com/static.jackboxgames.com/banners/D2.png",
-            "href": "https://jackboxgames.com/drawful-two/?utm_source=jackboxtv&utm_campaign=jbgtvdraw&utm_content=jbgtvdraw"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "ON SALE! $11.25",
-            "src": "https://s3.amazonaws.com/static.jackboxgames.com/banners/PP2.png",
-            "href": "https://jackboxgames.com/party-pack-two/?utm_source=jackboxtv&utm_campaign=jbgtvpp2&utm_content=jbgtvpp2"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "BUY HERE!",
-            "src": "https://s3.amazonaws.com/static.jackboxgames.com/banners/PP1.png",
-            "href": "https://jackboxgames.com/party-pack/?utm_source=jackboxtv&utm_campaign=jbgtvpp1&utm_content=jbgtvpp1"
-        }
     ],
 
     "postGameBanners": {
